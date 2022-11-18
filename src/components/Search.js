@@ -37,15 +37,17 @@ const Search = () => {
         </div>
         
         <div>
+
           <div className="border text-center">
             <p className="pt-2">Book now</p>
             <p className="py-4">Click the button to book your trip</p>
             <p className="bg-gray-800 text-gray-200 py-2">START YOUR BOOKING</p>
           </div>
+
           <form className="w-full">
-            <div>
-              <label>Destinations</label>
-              <select>
+            <div className="flex flex-col my-2">
+              <label>Destination</label>
+              <select className="border-rounded-md p-2">
                 <option>Puerto Rico</option>
                 <option>Colombia</option>
                 <option>Dominican Republic</option>
@@ -54,14 +56,15 @@ const Search = () => {
                 <option>The Carribeans</option>
               </select>
             </div>
-            <div>
+            <div className="flex flex-col my-2">
               <label>Check-In</label>
-              <input type="date"></input>
+              <input className="border-rounded-md p-2" type="date"></input>
             </div>
-            <div>
-            <label>Check-Out</label>
-            <input type="date"></input>
-          </div>
+            <div className="flex flex-col my-2">
+              <label>Check-Out</label>
+              <input className="border-rounded-md p-2" type="date"></input>
+            </div>
+            <button className="w-full my-4">Rates and Availabilities</button>
           </form>
         </div>
     </div>
