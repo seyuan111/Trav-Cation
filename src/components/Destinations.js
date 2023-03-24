@@ -11,11 +11,11 @@ const Destinations = () => {
         <h1>Take a vacation and find resorts</h1>
         <p className="py-4">Best vacations to go</p>
         <div className="grid grid-rows-none md:grid-cols-5 py-4 gap-2 md:gap-4">
-            <img className="w-full h-full object-cover col-span-2 md:col-span-3 row-span-2" src={Vacation} alt="/" />
-            <img className="w-full h-full object-cover" src={Vacation1} alt="/" />
-            <img className="w-full h-full object-cover" src={Vacation2} alt="/" />
-            <img className="w-full h-full object-cover" src={Vacation3} alt="/" />
-            <img className="w-full h-full object-cover" src={Vacation4} alt="/" />
+            <img className="w-[50%] h-full object-cover col-span-2 md:col-span-3 row-span-2" src={Vacation} alt="/" />
+            <img className="w-[50%] h-full object-cover" src={Vacation1} alt="/" />
+            <img className="w-[50%] h-full object-cover" src={Vacation2} alt="/" />
+            <img className="w-[50%] h-full object-cover" src={Vacation3} alt="/" />
+            <img className="w-[50%] h-full object-cover" src={Vacation4} alt="/" />
         </div>
     </div>
   )

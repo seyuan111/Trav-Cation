@@ -12,7 +12,7 @@ const Hero = () => {
                 <h3 className="py-4">Travel with cruises or planes to anywhere</h3>
                 <form className="flex justify-between items-center max-w-[700px] mx-auto w-full border p-1 rounded-md text-black bg-gray-100/70">
                     <div>
-                        <input className="bg-transparent w-[300px] sm:w-[400px] focus:outline-none" type="text" placeholder="search trip" />
+                        <input className="pl-4 bg-transparent w-[300px] sm:w-[400px] focus:outline-none" type="text" placeholder="search trip" />
                     </div>
                     <div>
                         <button><AiOutlineSearch size={20} className="icon" style={{ color: "white"}}/></button>

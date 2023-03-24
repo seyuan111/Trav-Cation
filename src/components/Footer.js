@@ -1,30 +1,18 @@
 import React from 'react'
-import {FaFacebook, FaTwitter, FaYoutube, FaPinterest, FaInstagram} from 'react-icons/fa'
+import {FaFacebook, FaTwitter, FaYoutube, FaPinterest, FaInstagram, FaLinkedin} from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <div className="w-full bg-gray-100 py-16">
-        <div className="max-w-[1240px] mx-auto flex flex-col px-4">
-            <div className="sm:flex text-center justify-between items-center">
-                <h2>Trav-cation</h2>
-                <div className="flex justify-between w-full sm:max-w-[1280] my-4">
-                    <FaFacebook className="icon"/>
-                    <FaTwitter className="icon"/>
-                    <FaYoutube className="icon"/>
-                    <FaPinterest className="icon"/>
-                    <FaInstagram className="icon"/>
-                </div>
-            </div>
-            <div className="flex justify-between cursor-pointer">
-                <ul className="lg:flex">
-                    <li>About</li>
-                    <li>Careers</li>
-                    <li>Deals</li>
-                    <li>Top Booked</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-        </div>
+    <div className="bg-gray-400 pb-4">
+    <h1 className="text-center pt-6 text-white">Trav-Cation</h1>
+    <div className="w-full h-[80px] px-4 flex justify-center items-center gap-8">
+    <FaTwitter className="text-blue-500 cursor-pointer" size={30}/>
+    <FaInstagram className="cursor-pointer" size={30}/>
+    <FaFacebook className="text-blue-800 cursor-pointer" size={30}/>
+    <FaYoutube className="text-red-500 cursor-pointer" size={30}/>
+    <FaLinkedin className="text-blue-800 cursor-pointer" size={30}/>
+</div>
+<p className="text-center my-2 mb-7">All rights with <span className="underline text-blue-400 cursor-pointer">Sean&Shah</span></p>
     </div>
   )
 }
