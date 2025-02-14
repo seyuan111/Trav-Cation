@@ -1,27 +1,31 @@
-import React from 'react'
-import { AiOutlineSearch } from 'react-icons/ai'
-import Cruises from '../assets/Cruises.jpg'
+import React from "react";
+import { AiOutlineSearch } from "react-icons/ai";
+import Cruises from "../assets/Cruises.jpg";
+import {Link} from 'react-router-dom'
 
 const Hero = () => {
   return (
-    <div className='w-full h-screen relative'>
-        <img className='w-full h-full object-cover' src={Cruises} />
-        <div className="absolute w-full h-full top-0 left-0 bg-gray-900/30">
-            <div className="absolute top-0 w-full h-full flex flex-col justify-center text-center text-white p-4">
-                <h1>Travel anywhere anytime</h1>
-                <h3 className="py-4">Travel with cruises or planes to anywhere</h3>
-                <form className="flex justify-between items-center max-w-[700px] mx-auto w-full border p-1 rounded-md text-black bg-gray-100/70">
-                    <div>
-                        <input className="pl-4 bg-transparent w-[300px] sm:w-[400px] focus:outline-none" type="text" placeholder="search trip" />
-                    </div>
-                    <div>
-                        <button><AiOutlineSearch size={20} className="icon" style={{ color: "white"}}/></button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-  )
-}
+    <div className="w-full h-screen relative">
+      {/* Background Image */}
+      <img className="w-full h-full object-cover" src={Cruises} alt="Cruises" />
+      
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white px-6 text-center">
+        <h1 className="text-4xl sm:text-5xl font-bold tracking-wide">
+          Explore the World
+        </h1>
+        <h3 className="mt-4 text-lg sm:text-xl">
+          Travel by cruises to your favorite destinations.
+        </h3>
+        <h3 className="mt-4 text-lg sm:text-xl">
+        Pick your favorite cruises and your desired destinations. We also offer deals and services
+        </h3>
 
-export default Hero
+        {/* Search Bar */}
+        <button className="mt-6 py-2 px-4 bg-cyan-500 rounded-lg hover:bg-cyan-800 duration-300"><Link to="">book now</Link></button>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;

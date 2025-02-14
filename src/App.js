@@ -5,6 +5,7 @@ import Destinations from './components/Destinations'
 import Search from './components/Search'
 import Carousel from './components/Carousel'
 import Footer from './components/Footer'
+import CruiseCards from './components/CruiseCards'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Hero />
       <Carousel />
+      <CruiseCards />
       <Destinations />
       <Search />
       <Footer />
